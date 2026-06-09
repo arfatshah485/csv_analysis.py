@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Sample student data
+data = {
+    "Name": ["Ali", "Ahmed", "Sara", "Fatima", "Zaid"],
+    "Marks": [85, 90, 78, 92, 88]
+}
+
+df = pd.DataFrame(data)
+
+print("Student Data:")
+print(df)
+
+average_marks = df["Marks"].mean()
+
+print("\nAverage Marks:", average_marks)
+
+highest_marks = df["Marks"].max()
+print("Highest Marks:", highest_marks)
+
+lowest_marks = df["Marks"].min()
+print("Lowest Marks:", lowest_marks)
